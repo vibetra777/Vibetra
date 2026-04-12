@@ -23,7 +23,7 @@
   html { scroll-behavior: smooth; }
   body { font-family: 'DM Sans', sans-serif; background: #fff; color: var(--text); min-height: 100vh; overflow-x: hidden; }
 
-  #aurora-canvas { position: fixed; top:0; left:0; width:100%; height:100%; z-index:0; pointer-events:none; }
+  #aurora-canvas { position: fixed; top:0; left:0; width:100%; height:100%; z-index:-1; pointer-events:none; }
   .page-layer { position: relative; z-index:1; }
 
   /* ── NAVBAR ── */
@@ -107,7 +107,7 @@
   /* ── INCLUSIONS GRID ── */
   .inclusions-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:60px; max-width:1200px; margin-left:auto; margin-right:auto; }
   .inclusion-group {
-    background:rgba(255,255,255,0.04); border:1px solid var(--glass-border);
+    background:rgba(255,255,255,1); border:1px solid var(--glass-border);
     border-radius:22px; padding:28px 24px; backdrop-filter:blur(14px);
     text-align:left; position:relative; overflow:hidden;
     opacity:0; transform:translateY(32px);
